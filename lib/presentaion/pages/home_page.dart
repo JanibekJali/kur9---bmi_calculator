@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/presentaion/widgets/custom_container.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,8 +13,21 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Row(
-            children: [Container()],
-          )
+            children: const [
+              CustomConatainer(
+                text: 'maLe',
+                icons: Icons.male,
+              ),
+              CustomConatainer(
+                text: ' FeMaLe',
+                icons: Icons.female,
+              ),
+            ],
+          ),
+          const CustomConatainer(
+            text: 'Height',
+          ),
+          Slider(max: 300, value: 24, onChanged: ((value) {}))
         ],
       ),
     );
