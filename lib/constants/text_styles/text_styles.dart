@@ -16,6 +16,16 @@ class TextStyles {
     color: AppColors.black,
     fontWeight: FontWeight.w700,
   );
+  static const TextStyle text35Green = TextStyle(
+    fontSize: 35,
+    color: AppColors.green,
+    fontWeight: FontWeight.w700,
+  );
+  static const TextStyle text35White = TextStyle(
+    fontSize: 35,
+    color: AppColors.white,
+    fontWeight: FontWeight.w700,
+  );
   static const TextStyle text15Grey = TextStyle(
     fontSize: 15,
     color: AppColors.black,

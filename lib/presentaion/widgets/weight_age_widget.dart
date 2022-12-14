@@ -22,7 +22,7 @@ class WeightAgeWidget extends StatelessWidget {
         color: Colors.teal,
       ),
       child: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(28),
         child: Column(
           children: [
             Text(
@@ -36,16 +36,20 @@ class WeightAgeWidget extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FloatingActionButton(
-                  onPressed: onMinus,
-                  child: const Icon(Icons.remove),
+                CircleAvatar(
+                  child: IconButton(
+                    onPressed: onMinus,
+                    icon: const Icon(Icons.remove),
+                  ),
                 ),
                 const SizedBox(
                   width: 10,
                 ),
-                FloatingActionButton(
-                  onPressed: onPlus,
-                  child: const Icon(Icons.add),
+                CircleAvatar(
+                  child: IconButton(
+                    onPressed: onPlus,
+                    icon: const Icon(Icons.add),
+                  ),
                 ),
               ],
             ),
